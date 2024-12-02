@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b4a40f; /* Light gray background */
+    color: #fffafa; /* Dark text for better contrast */
+}
+
+/* Header */
+header {
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow to the header */
+}
+
+header h1 {
+    font-size: 40px; /* Larger title for better visibility */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #444; /* Darker shade */
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav a {
+    color: rgb(11, 112, 179);
+    text-decoration: none;
+    margin: 0 20px; /* Larger space between links */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #575757; /* Dark gray hover effect */
+    color: #ffcc00; /* Yellow text on hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: rgb(2, 15, 201);
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners for main section */
+    box-shadow: 0 4px 8px rgba(252, 241, 241, 0.1); /* Adding shadow to content */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+h2 {
+    color: #333;
+    font-size: 32px;
+    border-bottom: 2px solid #eee; /* Underline effect for section titles */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 50px; /* Increased space between sections */
+}
+
+ul {
+    list-style-type: square; /* Square bullet points for the list */
+    padding-left: 20px; /* Padding for the list */
+}
+
+ul li {
+    font-size: 18px; /* Larger font size for list items */
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold; /* Bold text in the footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation items on small screens */
+    }
+
+    nav a {
+        margin: 10px 0; /* Add margin to stack links */
+        padding: 12px;
+    }
+
+    main {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
